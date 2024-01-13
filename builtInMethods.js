@@ -50,3 +50,6 @@ console.log(`I'll open the door when you ${rap.repeat(3)}`)
 // Call a different built-in JavaScript method on each of your variables. 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Include comments above each method call explaining the impact and return value of that method.
+var jellyBeans = ["orange", "cherry","lemon", "lime" ];
+// I will use the Uppercase method to capitalize each jellybean flavor in the array.
+console.log("jellyBeans".toUpperCase())
