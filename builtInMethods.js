@@ -10,13 +10,17 @@
 
 
 "Hello World".includes("Hello");
+//The .includes method reutrns true if it contains a specified string; in this case "Hello" 
+//It is a Boolean method, as its intent is to return T or F
+//In this case, it will return "true," since the string contains "Hello"
 
 
 "Hello World".endsWith("Hello");
+//.endsWith is another Boolean method that will return "false" in this case, since the specified string does not end with "Hello"
 
 
 "Hello World".endsWith("rld");
-
+//New patient, same treatment. The specified string does end with "rld" so the argument will return "true"
 
 
 // SECTION 2: Calling methods on variables assigned to strings.
@@ -32,6 +36,12 @@
 // The console.log() statements prints the return value of the startsWith() method (true) to the console.
 var firstName = "Jeff";
 console.log(firstName.startsWith("J"));
+
+//I'm going to attempt the repeat() method, which will repeat a string a specified number of times. 
+var rap = "knock"
+console.log(`I'll open the door when you ${rap.repeat(3)}`)
+
+
 
 
 
