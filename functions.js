@@ -36,21 +36,31 @@ return number * number
 // 5: Write a function named checkStock that satisfies the following interaction pattern:
 // Hint: You will only write one checkStock function that checks the quantity and then prints the corresponding statement.
 
-checkStock(4, "Coffee");
+
+function checkStock(quantity, product) {
+  if (quantity >=4) {
+  console.log(`${product} is stocked`);
+  } 
+  else if (quantity < 4 && quantity > 0) {
+  console.log(`${product} running LOW`);
+  }
+  else if (quantity === 0) {
+  console.log(`${product} OUT of stock!`);
+  }  
+  else if (quantity < 4 && quantity > 0) {
+  console.log(`${product} running LOW`);
+}
+}
+console.log(checkStock(4, "Coffee"));
 // => "Coffee is stocked"
 
-checkStock(3, "Tortillas");
-// => "Tortillas - running LOW"
+console.log(checkStock(3, "Tortillas"));
+// // => "Tortillas - running LOW"
 
-checkStock(0, "Cheese");
-// => "Cheese - OUT of stock!"
+console.log(checkStock(0, "Cheese"));
+// // => "Cheese - OUT of stock!"
 
-checkStock(1, "Salsa");
+console.log(checkStock(1, "Salsa"));
 // => "Salsa - running LOW"
-var Coffee = 4
-var Tortillas = 3
-var Cheese = 0
-var Salsa = 1
-function checkStock() {
-   return `"Coffee >= 4`
-}
+
+
